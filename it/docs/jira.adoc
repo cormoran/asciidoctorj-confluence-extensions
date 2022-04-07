@@ -1,0 +1,19 @@
+= Jira
+
+jira:CRM-4[]
+
+* [ ] TODO
+* [x] Done
+** [x] aa1
+** [ ] aa2
+*** [ ] *aa3*
+* [*] checked
+** [ ] bb
+
+smile
+
+* [ ] aaaa
+* asdf
+* bbb
+* [x] aaa
+* fff

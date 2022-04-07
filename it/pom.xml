@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>asciidoc-confluence-extensions</artifactId>
+        <groupId>me.cormoran</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>asciidoc-confluence-extension-it</artifactId>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sahli.asciidoc.confluence.publisher</groupId>
+                <artifactId>asciidoc-confluence-publisher-maven-plugin</artifactId>
+                <version>0.16.0</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>me.cormoran</groupId>
+                        <artifactId>asciidoc-confluence-extension-jira</artifactId>
+                        <version>1.0-SNAPSHOT</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>me.cormoran</groupId>
+                        <artifactId>asciidoc-confluence-extension-task</artifactId>
+                        <version>1.0-SNAPSHOT</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <asciidocRootFolder>docs</asciidocRootFolder>
+                    <sourceEncoding>UTF-8</sourceEncoding>
+<!--                    <rootConfluenceUrl>xxx</rootConfluenceUrl>-->
+                    <skipSslVerification>false</skipSslVerification>
+                    <maxRequestsPerSecond>10</maxRequestsPerSecond>
+<!--                    <spaceKey>TEST</spaceKey>-->
+<!--                    <ancestorId>xxxxxx</ancestorId>-->
+<!--                    <username>xxx</username>-->
+<!--                    <password>xxx</password>-->
+                    <serverId>myServerId</serverId>
+                    <pageTitlePrefix xml:space="preserve">Doc ::</pageTitlePrefix>
+                    <pageTitleSuffix xml:space="preserve"> [${project.version}]</pageTitleSuffix>
+                    <versionMessage>Version ${project.version}</versionMessage>
+                    <notifyWatchers>false</notifyWatchers>
+                    <attributes>
+                        <version>${project.version}</version>
+                        <someOtherKey>value</someOtherKey>
+                    </attributes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
