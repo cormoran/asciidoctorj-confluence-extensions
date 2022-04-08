@@ -5,9 +5,32 @@
     <artifactId>asciidoctorj-confluence-extensions</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <description>
-        asciidoctorj extensions for confluence-publisher
-    </description>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>asciidoctorj extension collections for confluence-publisher</description>
+    <url>https://github.com/cormoran/asciidoctorj-confluence-extensions</url>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>cormoran</name>
+            <email>cormoran707@gmail.com</email>
+            <url>https://github.com/cormoran</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/cormoran/asciidoctorj-confluence-extensions.git</connection>
+        <developerConnection>scm:git:ssh://github.com:cormoran/asciidoctorj-confluence-extensions.git
+        </developerConnection>
+        <url>https://github.com/cormoran/asciidoctorj-confluence-extensions/tree/master</url>
+    </scm>
 
     <modules>
         <module>it</module>
