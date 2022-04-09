@@ -91,16 +91,13 @@
     </build>
     <profiles>
         <profile>
-            <id>it</id>
+            <id>example</id>
             <modules>
-                <module>it</module>
+                <module>example</module>
             </modules>
         </profile>
         <profile>
             <id>ossrh</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <build>
                 <plugins>
                     <plugin>
