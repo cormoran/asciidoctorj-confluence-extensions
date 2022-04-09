@@ -30,12 +30,12 @@
                 <configuration>
                     <asciidocRootFolder>docs</asciidocRootFolder>
                     <sourceEncoding>UTF-8</sourceEncoding>
-                    <rootConfluenceUrl>xxxx</rootConfluenceUrl>
+                    <rootConfluenceUrl>https://cormoran.atlassian.net/wiki</rootConfluenceUrl>
                     <skipSslVerification>false</skipSslVerification>
                     <maxRequestsPerSecond>10</maxRequestsPerSecond>
-                    <spaceKey>xxxx</spaceKey>
-                    <ancestorId>xxxx</ancestorId>
-                    <serverId>xxxx</serverId>
+                    <spaceKey>ACE</spaceKey>
+                    <ancestorId>1048839</ancestorId>
+                    <serverId>cormoranConfluenceServer</serverId>
                     <pageTitlePrefix xml:space="preserve">Doc ::</pageTitlePrefix>
                     <pageTitleSuffix xml:space="preserve"> [${project.version}]</pageTitleSuffix>
                     <versionMessage>Version ${project.version}</versionMessage>

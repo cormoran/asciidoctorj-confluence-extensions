@@ -1,0 +1,8 @@
+= Task
+
+* [ ] TODO
+* [x] Done
+** [x] Nested Done
+** [ ] Nested TODO
+*** [ ] *bold*
+* [*] checked Done
