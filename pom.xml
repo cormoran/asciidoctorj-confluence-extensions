@@ -4,7 +4,7 @@
     <groupId>me.cormoran</groupId>
     <artifactId>asciidoctorj-confluence-extensions</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>asciidoctorj extension collections for confluence-publisher</description>
